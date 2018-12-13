@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #ffb4aa;
+}
+
+/*fist page layout*/
+.title {
+    align-content: center;
+    text-align-last: center;
+}
+
+.subtitle {
+    text-align-last: center;
+}
+
+.firstpage {
+    padding-top: 100px;
+    align-content: center;
+
+}
+
+#searchbtn {
+    text-align-last: center;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+#searchbtn:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+}
+
+/*second page next&back buttons*/
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.back {
+    background-color: #ea5045;
+    color: white;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.next {
+    background-color: #ea5045;
+    color: white;
+    float: right;
+}
+
+.pagetitle {
+    text-align: center;
+    padding-top: 70px;
+}
+
+/*collapse menu*/
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+/*jobs-semester nav on page*/
+.myNav2 {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "back-jobs next-jobs";
+    background-color: #233249;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+}
+
+.back-jobs-semester {
+    grid-area: back-jobs;
+    background-color: #ea5045;
+    color: white;
+    width: 2em;
+}
+
+.next-jobs-semester {
+    grid-area: next-jobs;
+    background-color: #ea5045;
+    color: white;
+    text-align: right;
+    width: 2em;
+}
+
+/*the margin for the buttons of all 3 pages/semester/job/skills*/
+.margin button {
+    margin-top: 50px;
+}
+
+/*///3.skills page////*/
+/*photo link*/
+#photo {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.photo:hover {
+    background-color: #ccc;
+}
+
+/*////////*/
+
+/*photography page/ gallery*/
+
+.gallery {
+    background-color: grey;
+    align-content: center;
+
+    border: 1px solid #ccc;
+    width: 180px;
+    display: block;
+    margin: 1em auto 1em auto;
+
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    align-content: center;
+}
+
+.viewprofile a {
+    background-color: #ea5045;
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.viewprofile a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*///////////////////////*/
+/*profile page*/
+.card {
+
+    background-color: #29395A;
+    padding-top: 50px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title-card {
+    background-color: grey;
+    color: black;
+    font-size: 18px;
+}
+
+.myProfileBtn {
+    background-color: #f15b4e;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "sendMessage viewPortofolio";
+
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    font-size: 10px;
+}
+
+
+.sendMessage {
+    grid-area: sendMessage;
+
+
+}
+
+.sendMessage:hover {
+    background-color: #ccc;
+    color: black;
+
+}
+
+.viewPortofolio {
+    grid-area: viewPortofolio;
+
+}
+
+.viewPortofolio:hover {
+    background-color: #ccc;
+    color: black;
+
+}
+
+
+/*social media/contact page*/
+.socialmedia img {
+    color: black;
+    cursor: pointer;
+    width: 50px;
+    align-content: center;
+}
+
+/*///////////////////////////*/
+
+
+
+
+
+
+/*contact page */
+
+.myNav {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 0.1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "back-contact name profile-pic";
+    background-color: #233249;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.back-contact {
+    grid-area: back-contact;
+    position: relative;
+    width: 2em;
+
+}
+
+.name {
+    grid-area: name;
+    font-size: 0.5em;
+    color: #fff;
+}
+
+.profile-pic {
+    grid-area: profile-pic;
+    height: 2em;
+}
+
+.mess {
+    background-color: grey;
+    width: 100%;
+    height: 97vh;
+
+}
+
+.btn {
+    align-content: center;
+    text-align: left;
+    margin-top: 8px;
+    background-color: #ea5045;
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "textarea btn";
+    width: 100%;
+    background: #233249;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.textarea {
+    grid-area: textarea;
+    height: 1em;
+    margin: 0 0.5em;
+}
+
+.btn {
+    grid-area: btn;
+    margin: 0;
+}
